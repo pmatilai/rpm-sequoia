@@ -151,7 +151,7 @@ jobs:
 
                  mkdir -p rpm-build
                  cd rpm-build
-                 cmake -DCMAKE_INSTALL_PREFIX=/
+                 cmake -DCMAKE_INSTALL_PREFIX=/ ..
              else
                  cd rpm-build
              fi
