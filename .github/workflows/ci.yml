@@ -151,7 +151,7 @@ jobs:
 
                  mkdir -p rpm-build
                  cd rpm-build
-                 cmake -DCMAKE_INSTALL_PREFIX=/ ../rpm
+                 cmake -DCMAKE_INSTALL_PREFIX=/ -DWITH_ACL=OFF -DWITH_CAP=OFF -DWITH_SELINUX=OFF -DWITH_AUDIT=OFF -DWITH_DBUS=OFF ../rpm
              else
                  cd rpm-build
              fi
