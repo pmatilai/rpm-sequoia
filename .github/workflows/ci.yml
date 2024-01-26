@@ -107,7 +107,7 @@ jobs:
         run: cargo build
 
       - name: Setup | rpm Dependencies
-        run: sudo apt install cmake autoconf gettext tar zlib1g-dev libpopt-dev libsqlite0-dev liblua5.4-dev libarchive-dev libelf-dev
+        run: sudo apt install cmake autoconf gettext tar zlib1g-dev libpopt-dev libsqlite0-dev liblua5.4-dev libarchive-dev libelf-dev libdw-dev
 
       - name: Setup | Checkout rpm
         uses: actions/checkout@v2
